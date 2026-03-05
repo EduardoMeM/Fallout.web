@@ -246,7 +246,7 @@ section{
   text-align: center;
 }
 
-@media (max-width:768){
+@media (max-width:1200){
   body{
     font-size: 10px;
   }
@@ -295,9 +295,32 @@ header img{
   );
   border-radius: 40px;
   animation: luz 10s ease-in-out infinite;
-
-
-
 }
+
+.tiposdejogos{
+  text-align: left;
+}
+.tiposdejogos img{
+  width: 80px;
+  animation: none;
+  transition: none;
+}
+.tiposdejogos img:hover {
+  transform: none;
+}
+
+
+
+.carousel{
+  max-width: 300px;
+}
+.slides img {
+  width: 33.2%;
+  object-fit: cover;
+}
+#s1:checked ~ .slides { transform: translateX(0); }
+#s2:checked ~ .slides { transform: translateX(-33.33%); }
+#s3:checked ~ .slides { transform: translateX(-66.66%); }
+
 
 }
